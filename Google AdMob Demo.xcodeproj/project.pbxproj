@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51701419FE431542235DA77E /* Pods_Google_AdMob_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3BFAB047E26FE08C9D9D08 /* Pods_Google_AdMob_Demo.framework */; };
 		9339400421DCC00A007DB749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339400321DCC00A007DB749 /* AppDelegate.swift */; };
 		9339400621DCC00A007DB749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339400521DCC00A007DB749 /* ViewController.swift */; };
 		9339400921DCC00A007DB749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9339400721DCC00A007DB749 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F47ACE21DE27635CC74D2EC /* Pods-Google AdMob Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google AdMob Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Google AdMob Demo/Pods-Google AdMob Demo.release.xcconfig"; sourceTree = "<group>"; };
+		7F3BFAB047E26FE08C9D9D08 /* Pods_Google_AdMob_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_AdMob_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9339400021DCC00A007DB749 /* Google AdMob Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google AdMob Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9339400321DCC00A007DB749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9339400521DCC00A007DB749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		9339400D21DCC00C007DB749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9339401021DCC00C007DB749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9339401221DCC00D007DB749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB62CCC0D0C3317BA0F19CAC /* Pods-Google AdMob Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google AdMob Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Google AdMob Demo/Pods-Google AdMob Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51701419FE431542235DA77E /* Pods_Google_AdMob_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9057C81C35502B545B17153D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F3BFAB047E26FE08C9D9D08 /* Pods_Google_AdMob_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		93393FF721DCC00A007DB749 = {
 			isa = PBXGroup;
 			children = (
 				9339400221DCC00A007DB749 /* Google AdMob Demo */,
 				9339400121DCC00A007DB749 /* Products */,
+				BDC7264563D76BEDD43A20F3 /* Pods */,
+				9057C81C35502B545B17153D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = "Google AdMob Demo";
 			sourceTree = "<group>";
 		};
+		BDC7264563D76BEDD43A20F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB62CCC0D0C3317BA0F19CAC /* Pods-Google AdMob Demo.debug.xcconfig */,
+				6F47ACE21DE27635CC74D2EC /* Pods-Google AdMob Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9339401521DCC00D007DB749 /* Build configuration list for PBXNativeTarget "Google AdMob Demo" */;
 			buildPhases = (
+				BD34389766DE499F58C69CBC /* [CP] Check Pods Manifest.lock */,
 				93393FFC21DCC00A007DB749 /* Sources */,
 				93393FFD21DCC00A007DB749 /* Frameworks */,
 				93393FFE21DCC00A007DB749 /* Resources */,
+				6C3816FC3941013FB07CA442 /* [CP] Embed Pods Frameworks */,
+				48BC36B9C3C154336EEB62D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48BC36B9C3C154336EEB62D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Google AdMob Demo/Pods-Google AdMob Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C3816FC3941013FB07CA442 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Google AdMob Demo/Pods-Google AdMob Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD34389766DE499F58C69CBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Google AdMob Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93393FFC21DCC00A007DB749 /* Sources */ = {
@@ -284,15 +362,13 @@
 		};
 		9339401621DCC00D007DB749 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB62CCC0D0C3317BA0F19CAC /* Pods-Google AdMob Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WYR3TSXQ5;
 				INFOPLIST_FILE = "Google AdMob Demo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ecanarys.Google-AdMob-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -302,15 +378,13 @@
 		};
 		9339401721DCC00D007DB749 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F47ACE21DE27635CC74D2EC /* Pods-Google AdMob Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WYR3TSXQ5;
 				INFOPLIST_FILE = "Google AdMob Demo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ecanarys.Google-AdMob-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

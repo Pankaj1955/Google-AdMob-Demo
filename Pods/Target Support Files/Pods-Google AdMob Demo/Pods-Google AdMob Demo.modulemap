@@ -1,0 +1,6 @@
+framework module Pods_Google_AdMob_Demo {
+  umbrella header "Pods-Google AdMob Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
